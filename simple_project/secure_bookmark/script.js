@@ -6,10 +6,10 @@ function bookmark(url){
     const lock = document.createElement("span");
     link.href = url ;link.textContent = url;
     if(url.substring(0,5) === 'https'){
-        lock.textContent = "🔒";
+        lock.textContent = "&#128274;";
         lock.className = "green";
     }else{
-        lock.textContent = "🔓";
+        lock.textContent = "&#128275;";
         lock.className = "red";
     }
     webs.appendChild(link); 
