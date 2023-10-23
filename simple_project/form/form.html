@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Survey Form</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address"><br>
+        <label for="phone">Phone Number (e.g., (416) 555-5555):</label>
+        <input type="text" id="phone" required pattern="\(\d{3}\) \d{3}-\d{4}"><br>
+        <button type="button" onclick="validate()">Submit</button>
+      </form>
+    <div id="display"></div>
+</body>
+</html>
